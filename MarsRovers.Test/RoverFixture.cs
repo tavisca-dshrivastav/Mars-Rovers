@@ -2,6 +2,8 @@ using System;
 using Xunit;
 using MarsRovers;
 using FluentAssertions;
+using System.Collections.Generic;
+
 namespace MarsRovers.Test
 {
     public class RoverFixtures
@@ -23,6 +25,20 @@ namespace MarsRovers.Test
         {
             _rover.direction.GetType().Should().Be(typeof(Direction));
         }
-       
+        
+    }
+    public class MarsRoverProblemFixture
+    {
+        private Rover _rover = new Rover();
+        [Fact]
+        public void check_for_actual_input()
+        {
+            List<string> input = new List<string>() {
+                "5X5",
+                "1 2 N",
+                "LFLFLFLFF"
+            };
+            _rover.ProcessInput(input).Should().Be('N');
+        }
     }
 }
