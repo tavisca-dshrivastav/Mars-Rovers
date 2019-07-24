@@ -41,6 +41,20 @@ namespace MarsRovers
             else if (CurrentDirection == 'W')
                 CurrentDirection = 'N';
         }
+
+        public bool isValidMove(Map map)
+        {
+            if (map.CurrentPosition.XAxis < map.LastValidPosition.XAxis && CurrentDirection == 'E')
+                return true;
+            if (map.CurrentPosition.YAxis < map.LastValidPosition.YAxis && CurrentDirection == 'N')
+                return true;
+            if (map.CurrentPosition.XAxis > 0 && CurrentDirection == 'E')
+                return true;
+            if (map.CurrentPosition.YAxis > 0 && CurrentDirection == 'W')
+                return true;
+            return false;
+        }
+
         public void MoveForward(Map map)
         {
             if (CurrentDirection == 'N')
