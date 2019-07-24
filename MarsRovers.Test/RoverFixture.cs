@@ -23,5 +23,17 @@ namespace MarsRovers.Test
         {
             _rover.direction.GetType().Should().Be(typeof(Direction));
         }
+        
     }
+    public class SurfaceCordinateFixture
+    {
+        private SurfaceCordinate _surfaceCordinate = new SurfaceCordinate(2, 10);
+        [Fact]
+        public void SurfaceCordinate_should_add_x_axis_and_y_axis()
+        {
+            _surfaceCordinate.getXAxis().Should().Be(2);
+            _surfaceCordinate.getYAxis().Should().Be(10);
+        }
+    }
+
 }

@@ -1,9 +1,25 @@
-﻿namespace MarsRovers
+﻿using System;
+
+namespace MarsRovers
 {
     public class SurfaceCordinate
     {
-        public int X_Axis { get; set; }
-        public int Y_Axis { get; set; }
+        private int X_Axis;
+        private int Y_Axis;
+        public SurfaceCordinate(int X_axis, int Y_axis)
+        {
+            X_Axis = X_axis;
+            Y_Axis = Y_axis;
+        }
 
+        public int getXAxis()
+        {
+            return X_Axis;
+        }
+
+        public int getYAxis()
+        {
+            return Y_Axis;
+        }
     }
 }

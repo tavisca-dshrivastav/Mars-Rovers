@@ -21,20 +21,32 @@ namespace MarsRovers
     public class Map
     {
 
-        public SurfaceCordinate CurrentPosition { get; set; } //wait
-        public SurfaceCordinate LastValidPosition { get; set; }
-        public Direction Direction { get; set; }
+        public SurfaceCordinate CurrentPosition { get; private set; } //wait
+        public SurfaceCordinate LastValidPosition { get; private set; }
+        public Direction Direction { get; private set; }
 
         public Map()
         {
-            CurrentPosition = new SurfaceCordinate();
-            LastValidPosition = new SurfaceCordinate();
+            CurrentPosition = new SurfaceCordinate(0, 0);
+            LastValidPosition = new SurfaceCordinate(0, 0);
             Direction = new Direction();
+        }
+        public void SetCurrentPosition(int x, int y)
+        {
+            CurrentPosition = new SurfaceCordinate(x, y);
+        }
+        public void SetLastValidPosition(int x, int y)
+        {
+            LastValidPosition = new SurfaceCordinate(x, y);
         }
     }
     public class CommandList
     {
-
+        public char[] commandList { get; set; }
+        public CommandList()
+        {
+            commandList = new char[]{ 'L', 'R', 'F'};
+        }
     }
     public class Direction
     {
