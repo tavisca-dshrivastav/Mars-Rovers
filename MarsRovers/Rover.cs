@@ -21,6 +21,16 @@ namespace MarsRovers
     public class Map
     {
 
+        public SurfaceCordinate CurrentPosition { get; set; } //wait
+        public SurfaceCordinate LastValidPosition { get; set; }
+        public Direction Direction { get; set; }
+
+        public Map()
+        {
+            CurrentPosition = new SurfaceCordinate();
+            LastValidPosition = new SurfaceCordinate();
+            Direction = new Direction();
+        }
     }
     public class CommandList
     {
@@ -28,6 +38,6 @@ namespace MarsRovers
     }
     public class Direction
     {
-
+        public char RoverDirection { get; set; }
     }
 }
