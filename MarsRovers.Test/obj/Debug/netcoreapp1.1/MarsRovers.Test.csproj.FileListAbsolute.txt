@@ -1,0 +1,15 @@
+C:\Users\dshrivastav\source\repos\MarsRovers\MarsRovers.Test\bin\Debug\netcoreapp1.1\MarsRovers.Test.deps.json
+C:\Users\dshrivastav\source\repos\MarsRovers\MarsRovers.Test\bin\Debug\netcoreapp1.1\MarsRovers.Test.runtimeconfig.json
+C:\Users\dshrivastav\source\repos\MarsRovers\MarsRovers.Test\bin\Debug\netcoreapp1.1\MarsRovers.Test.runtimeconfig.dev.json
+C:\Users\dshrivastav\source\repos\MarsRovers\MarsRovers.Test\bin\Debug\netcoreapp1.1\MarsRovers.dll
+C:\Users\dshrivastav\source\repos\MarsRovers\MarsRovers.Test\obj\Debug\netcoreapp1.1\MarsRovers.Test.csprojResolveAssemblyReference.cache
+C:\Users\dshrivastav\source\repos\MarsRovers\MarsRovers.Test\obj\Debug\netcoreapp1.1\MarsRovers.Test.csproj.CoreCompileInputs.cache
+C:\Users\dshrivastav\source\repos\MarsRovers\MarsRovers.Test\obj\Debug\netcoreapp1.1\MarsRovers.Test.AssemblyInfo.cs
+C:\Users\dshrivastav\source\repos\MarsRovers\MarsRovers.Test\bin\Debug\netcoreapp1.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\dshrivastav\source\repos\MarsRovers\MarsRovers.Test\bin\Debug\netcoreapp1.1\xunit.runner.utility.netstandard15.dll
+C:\Users\dshrivastav\source\repos\MarsRovers\MarsRovers.Test\bin\Debug\netcoreapp1.1\xunit.runner.reporters.netstandard15.dll
+C:\Users\dshrivastav\source\repos\MarsRovers\MarsRovers.Test\bin\Debug\netcoreapp1.1\MarsRovers.Test.dll
+C:\Users\dshrivastav\source\repos\MarsRovers\MarsRovers.Test\bin\Debug\netcoreapp1.1\MarsRovers.Test.pdb
+C:\Users\dshrivastav\source\repos\MarsRovers\MarsRovers.Test\bin\Debug\netcoreapp1.1\MarsRovers.pdb
+C:\Users\dshrivastav\source\repos\MarsRovers\MarsRovers.Test\obj\Debug\netcoreapp1.1\MarsRovers.Test.dll
+C:\Users\dshrivastav\source\repos\MarsRovers\MarsRovers.Test\obj\Debug\netcoreapp1.1\MarsRovers.Test.pdb
