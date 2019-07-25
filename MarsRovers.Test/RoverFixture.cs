@@ -25,7 +25,7 @@ namespace MarsRovers.Test
         {
             _rover.direction.GetType().Should().Be(typeof(Direction));
         }
-        
+
     }
     public class MarsRoverProblemFixture
     {

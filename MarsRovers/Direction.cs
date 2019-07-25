@@ -1,19 +1,32 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace MarsRovers
 {
     public class Direction
     {
-        public char[] ValidDirection { get; set; }
+        private char[] ValidDirection { get; set; }
         public char RoverDirection { get; set; }
         public char CurrentDirection { get; private set; }
+        private Dictionary<char, char> moveLeft = new Dictionary<char, char>();
+        private Dictionary<char, char> moveRight = new Dictionary<char, char>();
         public Direction()
         {
             ValidDirection = new char[]
             {
                 'N', 'S', 'E', 'W'
             };
+            moveLeft['N'] = 'W';
+            moveLeft['S'] = 'E';
+            moveLeft['E'] = 'N';
+            moveLeft['W'] = 'S';
+            moveRight['N'] = 'E';
+            moveRight['S'] = 'W';
+            moveRight['E'] = 'S';
+            moveRight['W'] = 'N';
         }
+        
+        
         public void SetCurrentDirection(char currentDirection)
         {
             CurrentDirection = currentDirection;
@@ -21,25 +34,11 @@ namespace MarsRovers
 
         public void MoveLeft()
         {
-            if (CurrentDirection == 'N')
-                CurrentDirection = 'W';
-            else if (CurrentDirection == 'S')
-                CurrentDirection = 'E';
-            else if (CurrentDirection == 'E')
-                CurrentDirection = 'N';
-            else if (CurrentDirection == 'W')
-                CurrentDirection = 'S';
+            CurrentDirection = moveLeft[CurrentDirection];
         }
         public void MoveRight()
         {
-            if (CurrentDirection == 'N')
-                CurrentDirection = 'E';
-            else if (CurrentDirection == 'S')
-                CurrentDirection = 'W';
-            else if (CurrentDirection == 'E')
-                CurrentDirection = 'S';
-            else if (CurrentDirection == 'W')
-                CurrentDirection = 'N';
+            CurrentDirection = moveRight[CurrentDirection];
         }
 
         public bool isValidMove(Map map)
@@ -66,10 +65,6 @@ namespace MarsRovers
             if (CurrentDirection == 'W')
                 map.CurrentPosition.XAxis -= 1;
         }
-
-        private  SurfaceCordinate GetCurrentPosition(Map map)
-        {
-            return map.CurrentPosition;
-        }
+        
     }
 }
